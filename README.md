@@ -4,6 +4,8 @@
 
 ```
 npm install ts-node-dev --save-dev
+npm install uuid
+npm install @types/uuid --save-dev
 ```
 
 - Inserindo script dev para automatizar o processo de compilação
