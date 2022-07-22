@@ -12,4 +12,6 @@ npm install ts-node-dev --save-dev
 ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts
 ```
 
+## Imagem do diagrama do projeto de API
+
 ![Imagem do diagrama](diagrama.png)
