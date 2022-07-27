@@ -1,10 +1,9 @@
 import { Router } from "express";
-import { CategoriesRepository } from "../modules/cars/repositories/CategoriesRepository";
-import { PostgresCategoriesRepository } from "../modules/cars/repositories/PostgresCategoriesRepository";
 import { createCategoryController } from "../modules/cars/useCases/createCategory";
+import { listCategoriesController } from "../modules/cars/useCases/listCategories";
+import { PostgresCategoriesRepository } from "../modules/cars/repositories/PostgresCategoriesRepository";
 
 const categoriesRoutes = Router();
-const categoriesRepository = new CategoriesRepository();
 //const categoriesRepository = new PostgresCategoriesRepository();
 
 categoriesRoutes.post("/", (request, response) => {
@@ -12,8 +11,7 @@ categoriesRoutes.post("/", (request, response) => {
 });
 
 categoriesRoutes.get("/", (request, response) => {
-  const all = categoriesRepository.list();
-  return response.json(all);
+  return listCategoriesController.handle(request, response);
 });
 
 export { categoriesRoutes };
