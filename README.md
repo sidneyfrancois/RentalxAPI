@@ -8,6 +8,7 @@ npm install uuid
 npm install @types/uuid --save-dev
 npm install multer
 npm install @types/multer --save-dev
+npm install csv-parse
 ```
 
 - Inserindo script dev para automatizar o processo de compilação
