@@ -9,6 +9,8 @@ npm install @types/uuid --save-dev
 npm install multer
 npm install @types/multer --save-dev
 npm install csv-parse
+npm install swagger-ui-express
+npm install @types/swagger-ui-express --save-dev
 ```
 
 - Inserindo script dev para automatizar o processo de compilação
