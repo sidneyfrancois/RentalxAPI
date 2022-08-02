@@ -19,6 +19,19 @@ npm install @types/swagger-ui-express --save-dev
 ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts
 ```
 
+- Docker (Comandos para criar imagem e rodar containers)
+
+```
+docker build -t rentx .
+docker run -p 3333:3333 rentx
+```
+
+- Após o Docker compose inserir a tag --poll no script dev
+
+```
+ts-node-dev --poll --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts
+```
+
 ## Imagem do diagrama do projeto de API
 
 ![Imagem do diagrama](diagrama.png)
