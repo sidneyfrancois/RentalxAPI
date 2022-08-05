@@ -11,6 +11,8 @@ npm install @types/multer --save-dev
 npm install csv-parse
 npm install swagger-ui-express
 npm install @types/swagger-ui-express --save-dev
+npm install typeorm reflect-metadata
+npm install pg
 ```
 
 - Inserindo script dev para automatizar o processo de compilação
