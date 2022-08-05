@@ -28,6 +28,12 @@ docker build -t rentx .
 docker run -p 3333:3333 rentx
 ```
 
+para forçar recriação da imagem
+
+```
+docker-compose up --force-recreate
+```
+
 - Após o Docker compose inserir a tag --poll no script dev
 
 ```
