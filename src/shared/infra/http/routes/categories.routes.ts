@@ -1,9 +1,9 @@
 import { Router } from "express";
 import multer from "multer";
-import { CreateCategoryController } from "../modules/cars/useCases/createCategory/CreateCategoryController";
-import { ListCategoriesController } from "../modules/cars/useCases/listCategories/ListCategoriesController";
-import { ImportCategoryController } from "../modules/cars/useCases/importCategory/ImportCategoryController";
-import { PostgresCategoriesRepository } from "../modules/cars/repositories/implementations/PostgresCategoriesRepository";
+import { CreateCategoryController } from "../../../../modules/cars/useCases/createCategory/CreateCategoryController";
+import { ListCategoriesController } from "../../../../modules/cars/useCases/listCategories/ListCategoriesController";
+import { ImportCategoryController } from "../../../../modules/cars/useCases/importCategory/ImportCategoryController";
+import { PostgresCategoriesRepository } from "../../../../modules/cars/repositories/implementations/PostgresCategoriesRepository";
 
 const categoriesRoutes = Router();
 const upload = multer({ dest: "./tmp" });
